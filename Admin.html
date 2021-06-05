@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href= 
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> 
+	
+	<script src= 
+"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> 
+	</script> 
+	
+	<script src= 
+"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"> 
+	</script> 
+	
+	<script src= 
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"> 
+	</script> 
+    <title>Admin</title>
+    <style>
+        body{
+    background-color:rgb(169,169,169);}
+    label{
+        margin:10% 40% 0% 40%;
+        color: blue;
+        font-size: large;
+        width:30%;
+    }
+    
+    button{
+    display:inline-block;
+    margin:1% 40%;
+    width:30%;
+    padding: 10px 50px 10px 50px;
+   
+}
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;" >Admin Logged In</h2>
+<form  style=" float: left;" method='post' action='delete' >
+    <label>Delete Books</label>
+    <label>Enter  Book Name:<input type="text" name="deltext"></label><br>
+  <button type="submit" class="btn btn-info">Delete</button><br><br>
+</form>
+
+<form  style=" float: right;"method='post' action='insert' >
+    <label>INSERT BOOK</label>
+    <label>Enter a Book Name :<input type="text" name="intext"></label><br>
+    <label>Enter a Book Pages:<input type="number" name="inpag"></label><br>
+  <button type="submit" class="btn btn-info">insert</button><br><br>
+</form>
+</body>
+</html>
